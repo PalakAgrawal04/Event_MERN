@@ -16,3 +16,4 @@ export const addEvent = (eventData) => API.post('/events/add', eventData);
 export const getEvents = () => API.get('/events');
 export const updateEvent = (id, eventData) => API.put(`/events/${id}`, eventData);
 export const deleteEvent = (id) => API.delete(`/events/${id}`);
+export const sendInvitation = (inviteData) => API.post('/invites/invite', inviteData);
