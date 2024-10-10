@@ -66,7 +66,6 @@ const AdminDashboard = () => {
   return (
     <div className="container">
       <h2>Admin Dashboard</h2>
-      <button onClick={handleLogout}>Logout</button> {/* Logout button */}
 
       <form onSubmit={handleSubmit}>
         <input
@@ -126,6 +125,8 @@ const AdminDashboard = () => {
           </li>
         ))}
       </ul>
+
+      <button onClick={handleLogout}>Logout</button> {/* Moved Logout button here */}
     </div>
   );
 };

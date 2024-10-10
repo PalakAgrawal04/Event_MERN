@@ -25,7 +25,6 @@ const StudentDashboard = () => {
   return (
     <div className="container">
       <h2>Student Dashboard</h2>
-      <button onClick={handleLogout}>Logout</button> {/* Logout button */}
       <h3>Upcoming and Ongoing Events</h3>
       <ul>
         {events.map((event) => (
@@ -39,6 +38,8 @@ const StudentDashboard = () => {
           </li>
         ))}
       </ul>
+
+      <button onClick={handleLogout}>Logout</button> {/* Moved Logout button here */}
     </div>
   );
 };
